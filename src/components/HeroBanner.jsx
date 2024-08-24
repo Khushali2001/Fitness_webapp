@@ -80,6 +80,10 @@ const Container = styled.div`
       height: 75vmax;
     }
 
+    .hero-content {
+      padding-left: 0;
+    }
+
     .hero-content h1 {
       max-width: 250px;
       font-size: 30px;
