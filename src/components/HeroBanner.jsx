@@ -37,7 +37,7 @@ const Container = styled.div`
 
   .hero-content button {
     width: fit-content;
-    background-color: #3f3dad;
+    background-color: #6f6de8;
     padding: 12px 28px;
     color: #fff;
     font-weight: 100;
@@ -59,6 +59,7 @@ const Container = styled.div`
     font-size: 24px;
     color: #fff;
     font-weight: 400;
+    text-align: center;
   }
 
   @media screen and (max-width: 1600px) {

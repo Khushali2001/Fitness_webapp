@@ -98,12 +98,12 @@ export const SearchExercise = () => {
         {filteredExercises.length === 0 ? (
           <Loader />
         ) : (
-          <Box sx={{ display: "flex", flexWrap: "wrap" }}>
+          <Box sx={{ display: "flex", flexWrap: "wrap", width: "100%" }}>
             {filteredExercises.map((exercise, i) => (
               <div key={exercise.id} className="exercise_card">
                 <div className="card-wrapper">
-                  <span className="exersice_no">{i + 1}</span>
                   <img src={exercise.gifUrl} alt="EXERCISE_IMG" />
+                  {/* <div className="exersice_no">{i + 1}</div> */}
                   <div className="exersice_deatil">
                     <h5 className="exersice_name">{exercise.name}</h5>
                     <h6 className="main_body_part">
@@ -114,13 +114,13 @@ export const SearchExercise = () => {
                     </h6>
                     <div className="secunday_mucels">
                       <h6>Secondary Muscles</h6>
-                      <p>
+                      <div>
                         {exercise.secondaryMuscles.map((smuscles, i) => (
                           <span key={i} className="badge">
                             {smuscles}
                           </span>
                         ))}
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </div>
