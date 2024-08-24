@@ -13,27 +13,31 @@ const Navbar = () => {
         padding: "20px 16px",
         color: "#fff",
         background: "#6F6DE8",
-      }}>
-      <h2>Fitness App</h2>
+      }}
+    >
+      <h2>KFitPulse</h2>
       <nav>
         <ul
           style={{
             display: "flex",
             gap: "16px",
-          }}>
+          }}
+        >
           <li>
             <NavLink
               to="/"
               style={({ isActive }) => ({
                 color: "#FFF",
                 textDecoration: isActive ? "underline" : "none",
-              })}>
+              })}
+            >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/exercise/:id"
-               style={({ isActive }) => ({
+            <NavLink
+              to="/exercise/:id"
+              style={({ isActive }) => ({
                 color: "#FFF",
                 textDecoration: isActive ? "underline" : "none",
               })}

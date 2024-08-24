@@ -32,9 +32,10 @@ const Container = styled.div`
     gap: 15px;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
-  .hero-content button{
+  .hero-content button {
     width: fit-content;
     background-color: #3f3dad;
     padding: 12px 28px;
@@ -46,48 +47,48 @@ const Container = styled.div`
     cursor: pointer;
     transition: all 0.5s linear;
     &:hover {
-    background-color: #2e2c7b; // Remove the quotes around the color
+      background-color: #2e2c7b; // Remove the quotes around the color
     }
   }
-  .hero-content h1{
+  .hero-content h1 {
+    text-align: center;
     font-size: 60px;
-    color: #6f6de8;
+    color: #fff;
   }
-  .hero-content p{
+  .hero-content p {
     font-size: 24px;
-    color: #6f6de8;
+    color: #fff;
     font-weight: 400;
   }
 
   @media screen and (max-width: 1600px) {
-    .hero-content{
+    .hero-content {
       padding-left: 50px;
     }
-    .hero-content h1{
+    .hero-content h1 {
       max-width: 400px;
       font-size: 50px;
     }
-    .hero-content p{
+    .hero-content p {
       font-size: 22px;
     }
   }
 
   @media screen and (max-width: 768px) {
-
-    img{
+    img {
       height: 75vmax;
     }
 
-    .hero-content h1{
+    .hero-content h1 {
       max-width: 250px;
       font-size: 30px;
     }
-    .hero-content p{
+    .hero-content p {
       font-size: 20px;
       max-width: 250px;
     }
 
-    .hero-content button{
+    .hero-content button {
       font-size: 14px;
     }
   }
